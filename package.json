@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-14-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write --list-different .",
+    "postinstall": "npx husky install",
+    "cy:open": "cypress open",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component"
+  },
+  "dependencies": {
+    "husky": "^8.0.3",
+    "next": "14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.35",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.16",
+    "cypress": "^13.4.0",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "start-server-and-test": "^2.0.2",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format:fix && git add -A .",
+      "commit-msg": "npm run build"
+    }
+  }
+}
