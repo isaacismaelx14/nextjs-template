@@ -3,6 +3,7 @@
 This is a starter template for [Learn Next.js](https://nextjs.org/learn), a framework for building web applications in JavaScript.
 
 ## Features
+
 - [x] Next.js 14
 - [x] React 18
 - [x] Tailwind CSS 3
