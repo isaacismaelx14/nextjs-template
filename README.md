@@ -15,6 +15,19 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn), a fram
 
 ## Getting Started
 
+Start using create-next-app:
+
+```bash
+# with npx
+npx create-next-app --example "https://github.com/isaacismaelx14/nextjs-template"
+
+# with yarn
+yarn create next-app --example "https://github.com/isaacismaelx14/nextjs-template"
+
+# with pnpx
+pnpx create-next-app --example "https://github.com/isaacismaelx14/nextjs-template"
+```
+
 First, run the development server:
 
 ```bash
