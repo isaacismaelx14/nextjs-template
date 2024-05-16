@@ -1,0 +1,10 @@
+{
+  "default": {
+    "metadata": {
+      "title": "Un site web"
+    }
+  },
+  "home": {
+    "title": "El template esta listo para usarse"
+  }
+}
